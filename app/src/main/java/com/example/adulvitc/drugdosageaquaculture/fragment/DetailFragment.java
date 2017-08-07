@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -65,6 +66,17 @@ public class DetailFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+
+        // ShowView
+        showView();
+
+        //Back Controller
+        backController();
+
+
+    } // OnActivityCreated
+
+    private void showView() {
         ImageView imageView = getView().findViewById(R.id.imvIcon);
         imageView.setImageResource(imageAnInt);
 
@@ -73,11 +85,17 @@ public class DetailFragment extends Fragment{
 
         TextView detailTextView = getView().findViewById(R.id.txtDetail);
         detailTextView.setText(detailString);
+    }
 
-
-
-
-    } // OnActivityCreated
+    private void backController() {
+        Button button = getView().findViewById(R.id.btnBack);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+    }
 
 
 }  // Main Class
