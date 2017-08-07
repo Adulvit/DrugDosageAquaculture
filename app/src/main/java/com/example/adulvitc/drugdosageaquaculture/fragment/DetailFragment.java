@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.adulvitc.drugdosageaquaculture.R;
 
@@ -57,5 +59,25 @@ public class DetailFragment extends Fragment{
         Log.d(tag, "Title ==>" + titleString);
         Log.d(tag,"Detail ==>" + detailString);
 
-    }
+    } // OnCreate
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        ImageView imageView = getView().findViewById(R.id.imvIcon);
+        imageView.setImageResource(imageAnInt);
+
+        TextView titleTextView = getView().findViewById(R.id.txtTitle);
+        titleTextView.setText(titleString);
+
+        TextView detailTextView = getView().findViewById(R.id.txtDetail);
+        detailTextView.setText(detailString);
+
+
+
+
+    } // OnActivityCreated
+
+
 }  // Main Class

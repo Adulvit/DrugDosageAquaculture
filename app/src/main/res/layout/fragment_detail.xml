@@ -19,7 +19,7 @@
         android:layout_height="match_parent">
 
         <!--Image and Title    -->
-        <LinearLayout
+        <RelativeLayout
             android:gravity="center_horizontal"
             android:padding="15dp"
             android:layout_weight="1"
@@ -30,23 +30,15 @@
             <!--Image-->
             <ImageView
                 android:id="@+id/imvIcon"
-                android:scaleType="center"
+                android:scaleType="centerInside"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <!--Title-->
-            <TextView
-                android:id="@+id/txtTitle"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/h1"
-                android:text="Title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
 
 
-        </LinearLayout>
+
+        </RelativeLayout>
 
         <!--Detail-->
 
@@ -56,6 +48,18 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <!--Title-->
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/imvIcon"
+                android:id="@+id/txtTitle"
+                android:textStyle="bold"
+                android:textColor="@color/textcolorPrimaryDark"
+                android:textSize="@dimen/h1"
+                android:text="Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -71,7 +75,7 @@
                     <TextView
                         android:id="@+id/txtDetail"
                         android:text="Detail"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/textcolorPrimaryDark"
                         android:textSize="@dimen/h2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
