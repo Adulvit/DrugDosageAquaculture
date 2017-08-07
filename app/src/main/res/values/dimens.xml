@@ -4,4 +4,5 @@
     <dimen name="h2">18sp</dimen>
     <dimen name="margin">20dp</dimen>
     <dimen name="h1">25sp</dimen>
+    <dimen name="margin1">10dp</dimen>
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.adulvitc.drugdosageaquaculture.fragment.MainFragment;
+import com.example.adulvitc.drugdosageaquaculture.fragment.ServiceFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Add Fragment to Activity
         if (savedInstanceState == null) {
-            MainFragment mainFragment = new MainFragment();
+            ServiceFragment serviceFragment = new ServiceFragment();
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.myContent, mainFragment)
+                    .add(R.id.myContent, serviceFragment)
                     .commit();
         }
 
