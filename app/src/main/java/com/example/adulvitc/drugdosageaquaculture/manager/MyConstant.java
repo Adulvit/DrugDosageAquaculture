@@ -9,32 +9,39 @@ import com.example.adulvitc.drugdosageaquaculture.R;
 public class MyConstant {
 
     // For Image
-    private int[] imageInts = new int[]{R.drawable.alfanor,
-            R.drawable.antibac,
-            R.drawable.tenamoxin,
+    private int[] imageInts = new int[]{
+            R.drawable.alfanor1,
+            R.drawable.antibac1,
+            R.drawable.tenamoxin1,
             R.drawable.aquac,
-            R.drawable.aqaunes,
-            R.drawable.oxybac50};
+            R.drawable.aqaunes1,
+            R.drawable.oxybac501,
+            R.drawable.adekm,
+            R.drawable.unknown1};
 
 
     //For Title
     private  String[] titleStrings = new String[]{
-            "Title1",
-            "Title2",
-            "Title3",
-            "Title4",
-            "Title5",
-            "Title6"};
+            "Alfanor 100",
+            "Antibac",
+            "Tenamoxin 500 WSP",
+            "Aqua-C",
+            "Aquanes",
+            "Oxybac 50",
+            "Adek-M",
+            "Unknown"};
 
 
     //For Detail
     private String[] detailStrings = new String[]{
-            "Detail1",
-            "Detail2",
-            "Detail3",
-            "Detail4",
-            "Detail5",
-            "Detail6"};
+            "Enrofloxacin 10%",
+            "Sulfadimethoxine 25% + Trimethoprim 5%",
+            "Amoxicillin 50%",
+            "Vitamin C 10%",
+            "Euglenal 5%",
+            "Oxytetracycline HCL 50%",
+            "Vitamin & Amino Acid solution",
+            "???"};
 
     public int[] getImageInts() {
         return imageInts;

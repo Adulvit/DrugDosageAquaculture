@@ -30,12 +30,13 @@
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             android:textSize="@dimen/h1"
-            android:text="Drug Dosage Aquaculture"
+            android:text="Drug Dose Calculator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <!--User-->
         <LinearLayout
+            android:layout_marginTop="@dimen/margin1"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -59,6 +60,7 @@
 
         <!--Password-->
         <LinearLayout
+            android:layout_marginBottom="@dimen/margin1"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

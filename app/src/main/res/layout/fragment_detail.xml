@@ -6,7 +6,7 @@
     <ImageView
         android:id="@+id/imvTop"
         android:scaleType="fitXY"
-        android:src="@drawable/logo9"
+        android:src="@drawable/logo10"
         android:layout_width="match_parent"
         android:layout_height="100dp" />
 
@@ -20,20 +20,21 @@
 
         <!--Image and Title    -->
         <RelativeLayout
-            android:gravity="center_horizontal"
-            android:padding="15dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp">
+
 
             <!--Image-->
             <ImageView
+                android:background="#64ffffff"
                 android:id="@+id/imvIcon"
-                android:scaleType="centerInside"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside" />
 
 
 

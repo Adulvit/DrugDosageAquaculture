@@ -2,21 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#64ffffff"
+    android:layout_margin="@dimen/margin1"
     android:orientation="horizontal">
 
     <!--Icon-->
     <ImageView
+        android:src="@mipmap/ic_launcher"
         android:id="@+id/imvIcon"
-        android:layout_margin="@dimen/margin1"
         android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/margin1" />
 
     <!--Content-->
     <LinearLayout
         android:orientation="vertical"
         android:padding="@dimen/margin1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <!--Title-->
         <TextView
