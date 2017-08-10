@@ -17,7 +17,7 @@ import com.example.adulvitc.drugdosageaquaculture.R;
  * Created by Adulvitc on 7/8/2560.
  */
 
-public class DetailFragment extends Fragment{
+public class  DetailFragment extends Fragment{
 
     private int imageAnInt;
     private String titleString, detailString;
