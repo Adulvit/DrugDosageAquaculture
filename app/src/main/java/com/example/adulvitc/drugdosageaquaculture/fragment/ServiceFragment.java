@@ -39,6 +39,7 @@ public class ServiceFragment extends Fragment{
         final int[] iconInts = myConstant.getImageInts();
         final String[] titleStrings = myConstant.getTitleStrings();
         final String[] detailStrings = myConstant.getDetailStrings();
+        final String[] longdetailStrings = myConstant.getLongdetailStrings();
 
         MyAdapter myAdapter = new MyAdapter(getContext(), iconInts, titleStrings, detailStrings);
         listView.setAdapter(myAdapter);
@@ -51,7 +52,7 @@ public class ServiceFragment extends Fragment{
               getActivity().getSupportFragmentManager()
                 .beginTransaction()
                       .replace(R.id.myContent, DetailFragment.detailInstant(iconInts[i],
-                              titleStrings[i], detailStrings[i]))
+                              titleStrings[i], detailStrings[i],longdetailStrings[i]))
                 .addToBackStack(null)
                 .commit();
             }

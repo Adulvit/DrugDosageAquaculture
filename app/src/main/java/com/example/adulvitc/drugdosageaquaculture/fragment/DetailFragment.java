@@ -20,17 +20,19 @@ import com.example.adulvitc.drugdosageaquaculture.R;
 public class  DetailFragment extends Fragment{
 
     private int imageAnInt;
-    private String titleString, detailString;
+    private String titleString, detailString,longString;
 
     public static DetailFragment detailInstant(int intImage,
                                                String strTitle,
-                                               String strDetail){
+                                               String strDetail,
+                                               String longString){
 
         DetailFragment detailFragment = new DetailFragment();
         Bundle bundle = new Bundle();
         bundle.putInt("Icon", intImage);
         bundle.putString("Title", strTitle);
         bundle.putString("Detail", strDetail);
+        bundle.putString("long_detail",longString);
         detailFragment.setArguments(bundle);
 
 
@@ -55,10 +57,12 @@ public class  DetailFragment extends Fragment{
         imageAnInt = getArguments().getInt("Icon");
         titleString = getArguments().getString("Title");
         detailString = getArguments().getString("Detail");
+        longString = getArguments().getString("long_detail");
 
         String tag = "7AugV1";
         Log.d(tag, "Title ==>" + titleString);
         Log.d(tag,"Detail ==>" + detailString);
+        Log.d(tag, "long_detail ==>" + longString);
 
     } // OnCreate
 
@@ -85,6 +89,9 @@ public class  DetailFragment extends Fragment{
 
         TextView detailTextView = getView().findViewById(R.id.txtDetail);
         detailTextView.setText(detailString);
+
+        TextView longdetailTextView = getView().findViewById(R.id.txtDetail2);
+        longdetailTextView.setText(longString);
     }
 
     private void backController() {
