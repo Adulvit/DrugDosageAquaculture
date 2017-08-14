@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud3"
+
+    >
 
 
     <!--Head-->
@@ -13,6 +17,7 @@
 
     <!--Content-->
     <LinearLayout
+        android:id="@+id/linTitle"
         android:layout_below="@+id/imvTop"
         android:padding="15dp"
         android:orientation="vertical"
@@ -21,6 +26,7 @@
 
         <!--Title-->
         <TextView
+            android:textColor="@color/textcolorPrimaryDark"
             android:id="@+id/txtTitle"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
@@ -31,7 +37,6 @@
 
         <!--Fill Input-->
         <LinearLayout
-
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -104,8 +109,11 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
+
+
+
+
 
             <!--Calculate Button-->
             <Button
@@ -117,18 +125,106 @@
         </LinearLayout>
 
 
-        <!--Show Answer-->
-        <TextView
-            android:gravity="right"
-            android:textStyle="bold"
-            android:textSize="@dimen/h2"
-            android:text="answer 123 unit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
 
 
     </LinearLayout>
+
+
+
+    <!--Answer-->
+    <LinearLayout
+        android:id="@+id/linBiomass"
+        android:layout_below="@+id/linTitle"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--Answer Biomass-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/h2"
+                        android:text="Biomass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:hint="Anwser"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/h2"
+                        android:text="KG"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <!--Animation-->
+    <LinearLayout
+        android:layout_below="@+id/linBiomass"
+        android:layout_above="@id/linButton"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:background="#82ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/animation2"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
 
     <!--Botton-->
     <LinearLayout
@@ -159,6 +255,7 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
+
 
 
 
