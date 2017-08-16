@@ -3,6 +3,7 @@ package com.example.adulvitc.drugdosageaquaculture.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.adulvitc.drugdosageaquaculture.R;
+
+import static com.example.adulvitc.drugdosageaquaculture.R.layout.frgment_calculate;
 
 /**
  * Created by Adulvitc on 7/8/2560.
@@ -78,6 +81,8 @@ public class  DetailFragment extends Fragment{
         backController();
 
 
+
+
     } // OnActivityCreated
 
     private void showView() {
@@ -103,6 +108,10 @@ public class  DetailFragment extends Fragment{
             }
         });
     }
+
+
+
+
 
 
 }  // Main Class
